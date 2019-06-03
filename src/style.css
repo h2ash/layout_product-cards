@@ -4,6 +4,7 @@
 }
 
 .card {
+  --card-color: #00acdc;
   width: 202px;
   box-sizing: border-box;
   padding: 30px 15px 15px;
@@ -11,71 +12,43 @@
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
+  /*star and review line*/
+  /*repeat style of .text*/
 }
-
 .card__img {
   padding: 0 5px;
   width: 160px;
   height: 134px;
 }
-
 .card__title {
   margin-top: 41px;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
 }
-
 .card__code {
   margin-top: 5px;
   font-size: 11px;
   line-height: 13px;
 }
-
-/*star and review line*/
 .card__review-container {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.rating {
-  display: flex;
-}
-
-.rating__star {
-  margin-right: 4px;
-  width: 15px;
-  height: 15px;
-  background: url("./images/star.svg") center no-repeat;
-}
-
-.rating__star-active {
-  background: url("./images/star-active.svg") center no-repeat;
-}
-
-.text {
-  font-size: 11px;
-  line-height: 13px;
-}
-
-/*text price and price*/
 .card__price {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-top: 20px;
 }
-
-/*repeat style of .text*/
 .card__price-value {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
 }
-
-.card_add-to-cart {
+.card__add-to-cart {
   margin-top: 20px;
   display: block;
   box-sizing: border-box;
@@ -87,15 +60,34 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #00acdc;
+  border: 1px solid var(--card-color);
   color: #fff;
-  background: #00acdc;
+  background: var(--card-color);
   border-radius: 5px;
 }
-
-.card_add-to-cart:hover {
-  color: #00acdc;
+.card__add-to-cart:hover {
+  color: var(--card-color);
   background: #fff;
 }
+
+.rating {
+  display: flex;
+}
+.rating__star {
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+  background: url("./images/star.svg") center no-repeat;
+}
+.rating__star-active {
+  background: url("./images/star-active.svg") center no-repeat;
+}
+
+.text {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+/*text price and price*/
 
 /*# sourceMappingURL=style.css.map */

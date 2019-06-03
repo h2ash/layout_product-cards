@@ -1,0 +1,84 @@
+$card-color: #00acdc;
+
+.card {
+  --card-color: #{$card-color};
+
+  width: 202px;
+  box-sizing: border-box;
+  padding: 30px 15px 15px;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+
+  &__img {
+    padding: 0 5px;
+    width: 160px;
+    height: 134px;
+  }
+
+  &__title {
+    margin-top: 41px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__code {
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  /*star and review line*/
+  &__review-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-top: 20px;
+  }
+
+  /*repeat style of .text*/
+
+  &__price-value {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__add-to-cart {
+    margin-top: 20px;
+
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 170px;
+
+    line-height: 40px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 1px solid  var(--card-color);
+    color: #fff;
+    background: var(--card-color);
+    border-radius: 5px;
+  }
+
+  &__add-to-cart:hover {
+    color: var(--card-color);
+    background: #fff;
+  }
+}
