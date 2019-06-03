@@ -38,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .rating {
@@ -65,10 +66,12 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
   margin-top: 20px;
 }
 
 /*repeat style of .text*/
+
 .card__price-value {
   font-weight: bold;
   font-size: 16px;
@@ -77,16 +80,20 @@
 
 .card_add-to-cart {
   margin-top: 20px;
+
   display: block;
   box-sizing: border-box;
   height: 40px;
   width: 170px;
+
   line-height: 40px;
   text-align: center;
+
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+
   border: 1px solid #00acdc;
   color: #fff;
   background: #00acdc;
@@ -97,5 +104,3 @@
   color: #00acdc;
   background: #fff;
 }
-
-/*# sourceMappingURL=style.css.map */
